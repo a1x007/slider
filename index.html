@@ -1,0 +1,165 @@
+<head>
+
+
+
+<meta name="viewport" content="width=1024"/>
+
+  <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+<link rel="stylesheet" href="splide.min.css"/>
+<link rel='stylesheet' href='style.css'>
+  
+  
+<style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+       
+      }
+
+      body {
+        background: #eee;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 90%;
+        height: 200px;
+        border-radius: 3px;
+        margin-left: 100;
+        
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit:cover;
+        border-radius: 3px;
+      }
+      .swiper-wrapper{
+        border-radius: 5px;
+        margin-left: 150px;
+      }
+      .swiper-pagination{
+        margin-block-start:200px
+      }
+       .swiper-pagination-bullet{
+         background: #fff;
+       }
+      .swiper-pagination-bullet-active{
+        background: #ddd;
+      }
+    .swiper-button-nexr:after{
+       font-family: 'FontAwesome';
+       color: #fff;
+       content:'\f105';
+       
+     }
+     .swiper-button-prev:after{
+       font-family: 'FontAwesome';
+       color: #fff;
+       content:'\f104';
+     }
+    </style>
+    
+</head>
+
+<body>
+  Hello World
+HELLO WORLD
+  <br>
+<div class="swiper mySwiper">
+ <div class="swiper-wrapper">
+   
+ <div class="swiper-slide">
+  <img src="images/01.jpg" class="thumb"/>
+  </div>
+ 
+  <div class="swiper-slide">
+  <img src="images/02.jpg" class="thumb"/>
+  </div>
+   <div class="swiper-slide">
+  <img src="images/03.jpg" class="thumb"/>
+  </div>
+    <div class="swiper-slide">
+  <img src="images/04.jpg" class="thumb"/>
+  </div> 
+   <div class="swiper-slide">
+  <img src="images/05.jpg" class="thumb"/>
+  </div>
+   <div class="swiper-slide">
+  <img src="images/06.jpg" class="thumb"/>
+  </div>
+ </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerVie: 3,
+        spaceBetween: 5,
+        slidesPerGrou: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+</body>
